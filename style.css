@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: system-ui;
-    font-size: none;
 }
 
 body {
@@ -20,25 +19,25 @@ body {
 .instagram-wrapper {
     display: flex;
     align-items: center;
-    justify-content: start;
-    width: 60%;
+    justify-content: center;
     height: 100vh;
 }
 
 .instagram-phone {
+    /* display: none; */
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     width: 50%;
 }
 
 .instagram-phone img {
-    height: 41rem;
+    height: 60%;
 }
 
 .instagram-continue {
     display: flex;
-    align-items: left; /*horizontal*/
+    align-items: center; /*horizontal*/
     justify-content: space-around; /*vertical*/
     flex-direction: column;
     width: 50%;
@@ -113,23 +112,23 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 76%;
+    width: 100%;
     height: 1.5rem;
     font-size: 14px;
 }
 
 .download {
     display: flex;
-    width: 76%;
-    justify-content: space-around;
-    align-items: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
 }
 
 .app-download {
     height: 2.5rem;
-    width: 8.4rem;
-    background-size: contain;
+    width: 8.5rem;
+    background-size: cover;
 }
 
 .app-download:nth-child(1) {
@@ -139,3 +138,26 @@ a {
 .app-download:nth-child(2) {
     background-image: url('img/googleplay-button.png');
 }
+
+@media (min-width: 1200px) {
+    .instagram-wrapper {
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    .instagram-phone:first-child {
+        display: none;
+    }
+    .instagram-continue {
+        width: 100%;
+    }
+    .instagram-wrapper{
+        background-color: #ffffff;
+        width: 100%;
+    }
+    .group1{
+        border: 0rem;
+    }
+} 
+
