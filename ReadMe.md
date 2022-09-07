@@ -2,7 +2,7 @@
 
 ## Recriar a página inicial do instagram
 
-###Conteúdo
+### Conteúdo
 * HTML, CSS e JavaScript;
 * Página responsiva;
 * Perfil pessoal do instagram
