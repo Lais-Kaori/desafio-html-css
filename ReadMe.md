@@ -3,7 +3,7 @@
 ### Recriar a página inicial do instagram
 *Página responsiva
 
-## Meu adicinal:
+## Meu adicional:
 *Slider rotativo
 
 [Deploy Website](https://recriando-instagram-laiskaori.netlify.app/)
