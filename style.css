@@ -18,9 +18,11 @@ body {
 
 .instagram-wrapper {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     height: 100vh;
+    position: relative;
+    margin-top: 10%;
 }
 
 .instagram-phone {
@@ -31,7 +33,26 @@ body {
 }
 
 .instagram-phone img {
-    height: 60%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    left: 73.1%;
+    margin-top: 129.75%;
+}
+
+.slider img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2.5s ease;
+}
+
+.slider img.selected {
+    opacity: 1;
 }
 
 .instagram-continue {
@@ -138,7 +159,7 @@ a {
     background-image: url('img/googleplay-button.png');
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 2700px) {
     .instagram-wrapper {
         width: 60%;
     }
